@@ -15,10 +15,12 @@ async function instaCheck(username) {
 		const span = await page.$$("span");
 		if (span.length > 1) {
 			await browser.close();
+			browser.close();
 			console.log("Available");
 			return ("Available");
 		} else {
 			await browser.close();
+			browser.close();
 			console.log("Unavailable");
 			return ("Unavailable");
 		}

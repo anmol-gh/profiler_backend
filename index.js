@@ -46,4 +46,13 @@ app.post("/buy", async (req, res) => {
 app.post("/dribbble", async (req, res) => {
 	const resultDribbble = await dribbbleCheck(req.body.username);
 	res.send(resultDribbble);
+<<<<<<< Updated upstream
 });
+=======
+});
+
+// app.post("/sanchar", async (req, res) => {
+// 	const resultSanchar = await sancharCheck(req.body.username);
+// 	res.send(resultSanchar)
+// })
+>>>>>>> Stashed changes
